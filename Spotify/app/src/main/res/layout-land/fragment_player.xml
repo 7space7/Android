@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context="com.ua.viktor.spotify.fragment.PlayerFragment">
+
+        <ImageView
+            android:id="@+id/imageAlbum"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/imageAlbum">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_below="@+id/startTime"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageButton
+                    android:id="@+id/media_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="#000000"
+                    android:src="@android:drawable/ic_media_previous" />
+
+                <ImageButton
+                    android:id="@+id/media_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="#000000"
+                    android:src="@android:drawable/ic_media_play" />
+
+                <ImageButton
+                    android:id="@+id/media_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="#000000"
+                    android:src="@android:drawable/ic_media_next" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nameSong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="Artist Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="2"
+                android:text="Track Name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/nameSong"
+                android:layout_marginTop="5dp"/>
+
+            <SeekBar
+                android:id="@+id/scrubBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameAlbum"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/scrubBar"
+                android:layout_below="@id/scrubBar"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:text="00:00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/scrubBar"
+                android:layout_below="@id/scrubBar"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:text="00:00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginRight="16dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
