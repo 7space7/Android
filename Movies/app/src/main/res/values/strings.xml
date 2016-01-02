@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_detail">Movie</string>
+    <string name="action_share">Share</string>
+    <string name="no_data_available">No data Available</string>
+
+
+
+    <string name="content_authority">com.ua.viktor.movies.app</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

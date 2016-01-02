@@ -1,0 +1,181 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.ua.viktor.movies.ui.DetailFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context="com.ua.viktor.movies.ui.MovieDetail">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/frameLayout">
+
+                <ImageView
+                    android:id="@+id/placeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="tImage" />
+
+                <LinearLayout
+                    android:id="@+id/llEditTextHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#95000000">
+
+                    <TextView
+                        android:id="@+id/etTodo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="24sp"/>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:layout_below="@+id/frameLayout"
+                android:id="@+id/linearLayout">
+
+                <ImageView
+                    android:layout_width="185dp"
+                    android:layout_height="250dp"
+                    android:id="@+id/imageView"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015"
+                        android:id="@+id/yearText"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120min"
+                        android:id="@+id/minText"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="22sp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8/10"
+                        android:id="@+id/ratingText"
+                        android:layout_gravity="center_horizontal"
+                        android:textIsSelectable="false"
+                        android:textSize="15sp"/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:id="@+id/ratingBar"
+                        android:numStars="5"
+                        android:stepSize="2"
+                        android:isIndicator="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond."
+                    android:id="@+id/descView"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"/>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+                    <View android:id="@+id/separator"
+                          android:background="@color/material_blue_grey_900"
+                          android:layout_width = "fill_parent"
+                          android:layout_height="1dip"
+                          android:layout_alignParentTop="true"
+                          android:layout_alignParentLeft="true"
+                          android:layout_alignParentStart="true"/>
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/imageButton"
+                        android:background="@android:drawable/ic_media_play"
+                        android:backgroundTint="#95000000"
+                        android:layout_marginLeft="59dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="59dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trailer"
+                        android:id="@+id/textView2"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources xmlns:tools="http://schemas.android.com/tools">
+        <!-- your theme inherits from the material theme -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/sunshine_blue</item>
+        <item name="colorPrimaryDark">@color/sunshine_dark_blue</item>
+    </style>
+
+
+    </resources>
+
+
