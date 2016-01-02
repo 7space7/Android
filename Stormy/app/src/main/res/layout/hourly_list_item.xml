@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                tools:background="@drawable/bg_gradient">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+      tools:text="12 PM"
+        android:id="@+id/timeTextView1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/timeTextView1"
+        android:layout_toEndOf="@+id/timeTextView1"
+        android:background="@drawable/cloudy_night"/>
+
+    <TextView
+        tools:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/temperatureLabel1"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Paurtly Cloudly"
+        android:id="@+id/summaryView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iconImageView"
+        android:layout_toEndOf="@+id/iconImageView"
+        android:textColor="#ffffffff"
+        android:layout_toLeftOf="@+id/temperatureLabel1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

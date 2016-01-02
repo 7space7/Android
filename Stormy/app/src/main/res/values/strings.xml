@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stormy</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_erorr">lol</string>
+    <string name="error_title">lol</string>
+    <string name="error_ok_button_text">ok</string>
+    <string name="error_message">lkj</string>
+    <string name="title_activity_detail_forecast">DetailForecast</string>
+    <string name="title_activity_hourly_forecast">HourlyForecastActivity</string>
+</resources>
